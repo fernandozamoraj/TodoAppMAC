@@ -1,0 +1,27 @@
+﻿@model ToDoSolution.Models.HomeViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <h4>HomeViewModel</h4>
+
+   <p>@Model.Name</p>
+
+    @ViewData["foo"];
+
+    @{
+        int i = 0;
+
+        i = 21;
+    }
+
+    @i;
+
+</div>
+<p>
+    @Model.WelcomeMessage
+</p>
